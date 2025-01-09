@@ -43,8 +43,8 @@ test('Prompt Dialog', async ({page}) =>{
         await dialog.dismiss();
 
     })
-    //await page.click('//button[normalize-space()="Prompt"]');
-    //await expect(page.locator("//p[@id='demo']")).toHaveText('Hello django! How are you today?');
+    await page.click('//button[normalize-space()="Prompt"]');
+    await expect(page.locator("//p[@id='demo']")).toHaveText('Hello django! How are you today?');
 
     await page.click('//button[normalize-space()="Prompt"]');
     await expect(page.locator('//p[@id="demo"]')).toHaveText('User cancelled the prompt.');

@@ -20,7 +20,7 @@ test('Bootstrap Dropdown', async ({page}) =>{
     for(let option of options)
     {
         const vaule= await option.textContent();
-        //console.log("Vaule is", vaule);
+        console.log("Vaule is", vaule);
         if(vaule.includes('Oracle') || vaule.includes('Java'))
         {
             await option.click();

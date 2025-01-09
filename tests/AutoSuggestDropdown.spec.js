@@ -29,7 +29,7 @@ test('Auto Suggest Dropdown', async ({page}) =>{
    for(let option1 of cityoptions1)
    {
         const value1= await option1.textContent()
-        //console.log(value1);
+        console.log(value1);
         if(value1.includes('Andheri East'))
         {
             await option1.click();
@@ -81,7 +81,7 @@ test('Auto Suggest Dropdown', async ({page}) =>{
 })
 
 
-/*const dates = await page.$x("//div[@class='DatePicker__CalendarContainer-sc-1kf43k8-0 jQCNYF']//span");
+const dates = await page.$x("//div[@class='DatePicker__CalendarContainer-sc-1kf43k8-0 jQCNYF']//span");
 
 for (let date of dates) {
     const textContent = await date.evaluate(el => el.textContent.trim());
@@ -89,4 +89,3 @@ for (let date of dates) {
         console.log(textContent);
     }
 }
-*/

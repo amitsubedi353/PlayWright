@@ -11,7 +11,7 @@ test('handle inputbox', async ({page})=>{
 
     await page.locator("//input[@id='firstName']").fill("Django");
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(4000);
 
 
 })

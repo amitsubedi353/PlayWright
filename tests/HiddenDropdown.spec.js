@@ -19,7 +19,7 @@ test('Hidden Dropdown', async ({page}) =>{
     for(let option of options)
     {
         const jobTitle =await option.textContent();
-        //console.log(jobTitle);
+        console.log(jobTitle);
         if(jobTitle.includes('QA Lead'))
         {
             await option.click();

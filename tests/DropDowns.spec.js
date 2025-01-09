@@ -4,7 +4,7 @@ test("Handle dropdowns",async ({page})=>{
 
     await page.goto('https://testautomationpractice.blogspot.com/');
 
-    //await page.locator("#country").selectOption({label:'Japan'});
+    await page.locator("#country").selectOption({label:'Japan'});
     //await page.locator('#country').selectOption('Germany');
     //await page.locator("#country").selectOption({value: 'uk'});
     //await page.locator('#country').selectOption({index: 1});
